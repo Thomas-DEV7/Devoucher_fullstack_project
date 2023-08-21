@@ -17,6 +17,7 @@
 
 - Configurar meu ambiente de desenvolvimento.
 - Iniciar meu projeto CRUD com React.
+- Rodar o frontend e o backend
 
 ### 📘 Resumo
 
