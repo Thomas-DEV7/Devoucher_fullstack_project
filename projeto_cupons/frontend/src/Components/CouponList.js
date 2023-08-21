@@ -22,7 +22,9 @@ function CouponList() {
 
   function handleDelete(id) {
     CupomService.delete(id).then(response => {
-      console.log("deletado", response)
+      console.log("deletado", response);
+      window.location.reload();     
+      
     }).catch(error => {
       console.log("erro", error)
     })

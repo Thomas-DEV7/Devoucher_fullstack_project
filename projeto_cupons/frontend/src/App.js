@@ -1,19 +1,24 @@
 import React from 'react';
-import './App.css';
-import CouponList from './Components/CouponList';
-import AddCoupon from './Components/AddCoupon';
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import { Tela } from './Tela';
+import { Header } from './Components/screen/header';
+import Footer from './Components/screen/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="container mt-4">
-        <h1>CRUD de Cupons</h1>
-      </header>
-      <AddCoupon />
-      <CouponList />
-
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/cupons" element={<Tela />} />
+        </Routes>
+        <Footer></Footer>
+      </div>
+    </Router>
   );
 }
 
