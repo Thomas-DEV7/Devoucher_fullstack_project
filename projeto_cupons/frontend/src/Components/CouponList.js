@@ -23,8 +23,7 @@ function CouponList() {
   function handleDelete(id) {
     CupomService.delete(id).then(response => {
       console.log("deletado", response);
-      window.location.reload();     
-      
+      window.location.reload();
     }).catch(error => {
       console.log("erro", error)
     })
@@ -49,7 +48,7 @@ function CouponList() {
   }
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 ">
       <h2 className="mb-4">Lista de Cupons</h2>
       <div className="row">
         {cupons.map(cupom => (

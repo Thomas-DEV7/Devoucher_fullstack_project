@@ -13,7 +13,7 @@ const AddCoupon = () => {
       .then(response => {
         // Atualize a lista ou faça outras ações aqui
         console.log(response.data);
-        window.location.reload();
+        window.location.href = '/cupons';
         alert('Cupom adicionado com sucesso!');
       })
       .catch(error => {

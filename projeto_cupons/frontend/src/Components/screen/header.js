@@ -6,7 +6,7 @@ export function Header() {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
-                    <a className="navbar-brand" href="/">MeuApp</a>
+                    <a className="navbar-brand" href="/">Dev<strong>oucher</strong></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -14,6 +14,12 @@ export function Header() {
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <a className="nav-link" href="/cupons">Cupons</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/new">Novo Cupom</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/cupons">EMBREVE</a>
                             </li>
                             {/* Outros itens do menu podem ser adicionados aqui */}
                         </ul>

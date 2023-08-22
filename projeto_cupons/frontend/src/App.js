@@ -4,9 +4,14 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import { Tela } from './Tela';
+import PrivateRoute from './Routes/PrivateRoutes';
 import { Header } from './Components/screen/header';
 import Footer from './Components/screen/footer';
+import AddCoupon from './Components/AddCoupon';
+import CouponList from './Components/CouponList';
+
+import Register from './pages/Register';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -14,9 +19,12 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="/cupons" element={<Tela />} />
+          <PrivateRoute path="/cupons" element={<CouponList />} />
+          <PrivateRoute path="/new" element={<AddCoupon />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
-        <Footer></Footer>
+        <Footer />
       </div>
     </Router>
   );
